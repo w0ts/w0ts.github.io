@@ -20,9 +20,6 @@
 .proj p { margin: 0; }
 .proj .what { color: var(--dim); font-size: 13px; }
 .proj .buttons { margin-top: auto; padding-top: var(--sp-2); }
-ul.more { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-2); }
-ul.more li { display: grid; grid-template-columns: minmax(130px, max-content) 1fr; gap: var(--sp-3); }
-@media (max-width: 560px) { ul.more li { grid-template-columns: 1fr; gap: 0; } }
 </style>
 </head>
 <body>
@@ -60,16 +57,6 @@ ul.more li { display: grid; grid-template-columns: minmax(130px, max-content) 1f
     </section>
   </div>
 
-  <section>
-    <h2>Also on GitHub</h2>
-    <ul class="more">
-      <li><a href="https://github.com/w0ts/fm1-base">fm1-base</a><span class="dim">An MPL-2.0 base and template for FM-1 firmware: platform, host simulator, browser emulator, Bluetooth MIDI, Wi-Fi, USB audio.</span></li>
-      <li><a href="https://github.com/w0ts/m-bootloader">m-bootloader</a><span class="dim">MIT clean-room bootloader for the FM-1 and SMK-37 Pro / Elite (JieLi AC791N), and M-Flasher's flash loader.</span></li>
-      <li><a href="https://github.com/w0ts/fm1-emulator">fm1-emulator</a><span class="dim">Runs FM-1 firmware without flashing a real device.</span></li>
-      <li><a href="https://github.com/w0ts/felucca-bsp">felucca-bsp</a><span class="dim">The FM-1 board support package that fm1-base and Optimist build on.</span></li>
-      <li><a href="https://github.com/w0ts/MyWidgets">MyWidgets</a><span class="dim">macOS desktop widgets: Grafana metrics, Windguru forecast, webcams, Claude Code usage.</span></li>
-    </ul>
-  </section>
 
   <footer class="site">w0ts. Trademarks belong to their owners; none of these projects is affiliated with M-VAVE, Elektron, Native Instruments or Ableton.</footer>
 </main>
