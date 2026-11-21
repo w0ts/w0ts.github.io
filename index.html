@@ -13,7 +13,6 @@
 .titlebar { background: linear-gradient(90deg, #ff8a1e, #287cff 30%, #9770c6 58%, #67d0ca 82%, transparent); border-radius: var(--r) 0 0 var(--r); }
 .titlebar > h1 { background: none; } .titlebar::after { background: none; }
 .grid.cards { --min: 420px; margin-bottom: var(--sp-3); } @media (max-width: 900px) { .grid.cards { --min: 280px; } }
-.lead { max-width: 760px; font-size: var(--fs-4); margin: 0 0 var(--sp-4); }
 .proj { display: flex; flex-direction: column; gap: var(--sp-2); border-left: 4px solid var(--accent); margin: 0; }
 .proj h2 { margin: 0; color: var(--accent-text); }
 .proj h2 a { color: inherit; text-decoration: none; } .proj h2 a:hover { text-decoration: underline; text-underline-offset: 3px; }
@@ -25,7 +24,6 @@
 <body>
 <main>
   <header class="site"><div class="titlebar"><h1>w0ts</h1></div><nav class="site" aria-label="Links"><a href="https://github.com/w0ts">github.com/w0ts</a></nav></header>
-  <p class="lead">Software and firmware for DJs and music gear. Each project has its own page; they all share one look (<a href="https://github.com/w0ts/site-style">site-style</a>), each in its own colour.</p>
 
   <div class="grid cards">
     <section class="proj" data-accent style="--accent: #ff8a1e; --accent-text-l: #a3530a; --accent-text-d: #ff8a1e">
