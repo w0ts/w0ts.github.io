@@ -10,8 +10,7 @@
 <style>
 /* the root page: no accent of its own; each project card carries its site's accent (data-accent re-resolves --accent-text) */
 :root { --accent: #67d0ca; --accent-text-l: #247570; --accent-text-d: #67d0ca; }
-.titlebar { background: linear-gradient(90deg, #ff8a1e, #287cff 30%, #9770c6 58%, #67d0ca 82%, transparent); border-radius: var(--r) 0 0 var(--r); }
-.titlebar > h1 { background: none; } .titlebar::after { background: none; }
+.titlebar > h1 { background: #a3a29b; } .titlebar::after { background: linear-gradient(90deg, #a3a29b, transparent); }
 .grid.cards { --min: 420px; margin-bottom: var(--sp-3); } @media (max-width: 900px) { .grid.cards { --min: 280px; } }
 .proj { display: flex; flex-direction: column; gap: var(--sp-2); border-left: 4px solid var(--accent); margin: 0; }
 .proj h2 { margin: 0; color: var(--accent-text); }
