@@ -12,12 +12,10 @@
 :root { --accent: #67d0ca; --accent-text-l: #247570; --accent-text-d: #67d0ca; }
 .titlebar > h1 { background: #a3a29b; } .titlebar::after { background: linear-gradient(90deg, #a3a29b, transparent); }
 .grid.cards { --min: 420px; margin-bottom: var(--sp-3); } @media (max-width: 900px) { .grid.cards { --min: 280px; } }
-.proj { display: flex; flex-direction: column; gap: var(--sp-2); border-left: 4px solid var(--accent); margin: 0; }
+.proj { position: relative; border-left: 4px solid var(--accent); margin: 0; }
+.proj:hover { background: var(--hover); }
 .proj h2 { margin: 0; color: var(--accent-text); }
-.proj h2 a { color: inherit; text-decoration: none; } .proj h2 a:hover { text-decoration: underline; text-underline-offset: 3px; }
-.proj p { margin: 0; }
-.proj .what { color: var(--dim); font-size: 13px; }
-.proj .buttons { margin-top: auto; padding-top: var(--sp-2); }
+.proj h2 a { color: inherit; text-decoration: none; } .proj h2 a::after { content: ""; position: absolute; inset: 0; }
 </style>
 </head>
 <body>
@@ -27,30 +25,18 @@
   <div class="grid cards">
     <section class="proj" data-accent style="--accent: #ff8a1e; --accent-text-l: #a3530a; --accent-text-d: #ff8a1e">
       <h2><a href="https://w0ts.github.io/Track-Kommander/">Track Kommander</a></h2>
-      <p class="what">macOS and Windows app, beside Traktor Pro 3 / 4</p>
-      <p>Finds the next track: ranks your library against what is playing and loads the one you pick, transition set up. Writes your Traktor collection to a USB stick CDJs read on their own.</p>
-      <div class="buttons"><a class="button" href="https://w0ts.github.io/Track-Kommander/">Open</a><a class="button quiet" href="https://github.com/w0ts/Track-Kommander/releases/latest">Download</a></div>
     </section>
 
     <section class="proj" data-accent style="--accent: #287cff; --accent-text-l: #1a52b8; --accent-text-d: #287cff">
       <h2><a href="https://w0ts.github.io/optimist/">Optimist</a></h2>
-      <p class="what">Firmware for the M-VAVE FM-1</p>
-      <p>An open, modular firmware platform for the FM-1 (from SLOOP / Felucca), with an installer, a builder, a simulator and an editor that run in the browser.</p>
-      <div class="buttons"><a class="button" href="https://w0ts.github.io/optimist/">Open</a><a class="button quiet" href="https://github.com/w0ts/optimist">GitHub</a></div>
     </section>
 
     <section class="proj" data-accent style="--accent: #9770c6; --accent-text-l: #8253ba; --accent-text-d: #a380d0">
       <h2><a href="https://w0ts.github.io/jank/">jank</a></h2>
-      <p class="what">ESP32-S3 device and its web page</p>
-      <p>Ableton Link with no router: joins Optimist's MODE JANK group of FM-1s and brings in computers, MIDI and modular gear, with MIDI clock and CLOCK / RESET outputs.</p>
-      <div class="buttons"><a class="button" href="https://w0ts.github.io/jank/">Open</a><a class="button quiet" href="https://github.com/w0ts/jank">GitHub</a></div>
     </section>
 
     <section class="proj" data-accent style="--accent: #67d0ca; --accent-text-l: #247570; --accent-text-d: #67d0ca">
       <h2><a href="https://w0ts.github.io/dn2-wishes/">DN2 Wishes</a></h2>
-      <p class="what">Firmware mod for the Elektron Digitone II, OS 1.12</p>
-      <p>Extra machines and effects for the Digitone II, built in the page from your own copies of Elektron's OS files. Unofficial; a fork of dn2mk2.</p>
-      <div class="buttons"><a class="button" href="https://w0ts.github.io/dn2-wishes/">Open</a><a class="button quiet" href="https://github.com/w0ts/dn2-wishes">GitHub</a></div>
     </section>
   </div>
 
