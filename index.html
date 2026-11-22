@@ -10,6 +10,7 @@
 <style>
 /* the root page: no accent of its own; each project card carries its site's accent (data-accent re-resolves --accent-text) */
 :root { --accent: #67d0ca; --accent-text-l: #247570; --accent-text-d: #67d0ca; }
+header.site nav.site a { color: var(--ink); } /* GitHub icon: plain ink (black light, near-white dark), not an accent */
 header.site .titlebar > h1 { background: #a3a29b; } header.site .titlebar::after { background: linear-gradient(90deg, #a3a29b, transparent); }
 /* the project list: one bar a line, A to Z, each the usual title bar (solid accent block with the name, then the fade) in its project's accent; the whole bar is the link */
 .cards { display: flex; flex-direction: column; margin-bottom: var(--sp-3); }
