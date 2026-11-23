@@ -11,6 +11,11 @@
 /* the root page: no accent of its own; each project card carries its site's accent (data-accent re-resolves --accent-text) */
 :root { --accent: #67d0ca; --accent-text-l: #247570; --accent-text-d: #67d0ca; }
 header.site .titlebar > h1 { background: #a3a29b; } header.site .titlebar::after { background: linear-gradient(90deg, #a3a29b, transparent); }
+/* the root page's own bar: "w0ts" centred on solid grey that fades out to both ends (the text stays on solid colour in
+   light and dark); the project bars below keep the usual name block + fade */
+header.site .titlebar { background: linear-gradient(90deg, transparent, #a3a29b 35%, #a3a29b 65%, transparent); }
+header.site .titlebar > h1 { flex: 1 1 auto; max-width: none; background: none; text-align: center; padding-left: 52px; padding-right: 52px; }
+header.site .titlebar::after { display: none; }
 /* projects.json (the switcher's list, site-style/switcher.js) holds the same projects: add a project to both.
    the project list: one bar a line, A to Z by the name shown, each the usual title bar (solid accent block with the name, then the fade) in its project's accent; the whole bar is the link */
 .cards { display: flex; flex-direction: column; margin-bottom: var(--sp-3); }
