@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Claude Voice",
+    "url": "https://w0ts.github.io/claude-code-voice/",
+    "tagline": "Claude Code speaks when it needs you",
+    "accent": "#d97757",
+    "repo": "https://github.com/w0ts/claude-code-voice"
+  },
+  {
+    "name": "Grids for Max for Live",
+    "url": "https://w0ts.github.io/Grids-for-Max-for-Live/",
+    "tagline": "Mutable Instruments Grids in Ableton Live",
+    "accent": "#6cc36b",
+    "repo": "https://github.com/w0ts/Grids-for-Max-for-Live"
+  },
+  {
+    "name": "Jank",
+    "url": "https://w0ts.github.io/jank/",
+    "tagline": "Ableton Link without an access point",
+    "accent": "#9770c6",
+    "repo": "https://github.com/w0ts/jank"
+  },
+  {
+    "name": "Optimist",
+    "url": "https://w0ts.github.io/optimist/",
+    "tagline": "M-Vave FM1 custom firmware",
+    "accent": "#da92cc",
+    "repo": "https://github.com/w0ts/optimist"
+  },
+  {
+    "name": "Track Kommander",
+    "url": "https://w0ts.github.io/Track-Kommander/",
+    "tagline": "Better matching for Traktor 4",
+    "accent": "#2b8cf5",
+    "repo": "https://github.com/w0ts/Track-Kommander"
+  },
+  {
+    "name": "VCVRack Holon.ist",
+    "url": "https://w0ts.github.io/VCVRack-Holon.ist/",
+    "tagline": "Modules for VCV Rack",
+    "accent": "#e6d84a",
+    "repo": "https://github.com/w0ts/VCVRack-Holon.ist"
+  },
+  {
+    "name": "Wishes",
+    "url": "https://w0ts.github.io/dn2-wishes/",
+    "tagline": "Digitone 2 custom firmware",
+    "accent": "#67d0ca",
+    "repo": "https://github.com/w0ts/dn2-wishes"
+  }
+]

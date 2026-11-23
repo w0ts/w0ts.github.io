@@ -12,7 +12,8 @@
 :root { --accent: #67d0ca; --accent-text-l: #247570; --accent-text-d: #67d0ca; }
 header.site nav.site a { color: var(--ink); } /* GitHub icon: plain ink (black light, near-white dark), not an accent */
 header.site .titlebar > h1 { background: #a3a29b; } header.site .titlebar::after { background: linear-gradient(90deg, #a3a29b, transparent); }
-/* the project list: one bar a line, A to Z by the name shown, each the usual title bar (solid accent block with the name, then the fade) in its project's accent; the whole bar is the link */
+/* projects.json (the switcher's list, site-style/switcher.js) holds the same projects: add a project to both.
+   the project list: one bar a line, A to Z by the name shown, each the usual title bar (solid accent block with the name, then the fade) in its project's accent; the whole bar is the link */
 .cards { display: flex; flex-direction: column; margin-bottom: var(--sp-3); }
 .proj { position: relative; }
 .proj > h2 { flex: 0 1 auto; max-width: calc(100% - 32px); min-width: 0; margin: 0; padding: 8px 18px 8px 16px; background: var(--accent); color: var(--on);
@@ -42,6 +43,7 @@ header.site > nav.site { position: absolute; top: 0; right: 10px; bottom: 0; pad
 .proj > .gh { position: absolute; top: 0; right: 10px; bottom: 0; z-index: 1; display: flex; align-items: center; color: var(--ink); }
 .proj > .gh:hover, header.site nav.site a:hover { opacity: .65; }
 </style>
+<script src="https://w0ts.github.io/site-style/switcher.js" defer></script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="gh" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol></svg>
