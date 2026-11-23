@@ -21,6 +21,20 @@
     "repo": "https://github.com/w0ts/jank"
   },
   {
+    "name": "Launchpad Pro95",
+    "url": "https://w0ts.github.io/Launchpad_Pro95/",
+    "tagline": "Launchpad Pro scripts for Ableton Live",
+    "accent": "#f0a33a",
+    "repo": "https://github.com/w0ts/Launchpad_Pro95"
+  },
+  {
+    "name": "Launchpad95",
+    "url": "https://w0ts.github.io/Launchpad95/",
+    "tagline": "Launchpad scripts for Ableton Live",
+    "accent": "#39ff14",
+    "repo": "https://github.com/w0ts/Launchpad95"
+  },
+  {
     "name": "Optimist",
     "url": "https://w0ts.github.io/optimist/",
     "tagline": "M-Vave FM1 custom firmware",
