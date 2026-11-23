@@ -24,6 +24,17 @@ header.site .titlebar > h1 { background: #a3a29b; } header.site .titlebar::after
 .proj > h2:has(+ .tagline) { padding-right: 6px; }
 .proj > .tagline { flex: 0 1 auto; min-width: 0; display: flex; align-items: center; padding: 6px 18px 6px 8px; background: var(--accent); color: var(--on); font-size: 17px; line-height: 1.25; }
 @media (max-width: 480px) { .proj > .tagline { font-size: 14px; padding: 5px 12px 5px 4px; } }
+/* narrow screens: the name on the first line, the tagline on a second line under it; the bar is one accent block over
+   both lines (the text always on solid colour), fading only in its last strip, under the GitHub icon */
+@media (max-width: 720px) {
+  .proj { flex-wrap: wrap; border-radius: var(--r) 0 0 var(--r);
+    background: linear-gradient(90deg, var(--accent) calc(100% - 72px), transparent); }
+  .proj > h2, .proj > h2:has(+ .tagline), .proj > .tagline, .proj::after { background: none; }
+  .proj > h2, .proj > h2:has(+ .tagline) { padding-right: 18px; }
+  .proj::after { order: 1; }
+  .proj > .tagline { order: 2; flex: 1 0 100%; display: block; padding: 0 52px 8px 16px; }   /* (block: its bold parts stay inline when it wraps) */
+}
+@media (max-width: 480px) { .proj > .tagline { padding: 0 48px 7px 12px; } }
 /* GitHub icons sit on the right end of each bar, over the clear end of the fade (ink: black light, near-white dark) */
 header.site { position: relative; }
 header.site > nav.site { position: absolute; top: 0; right: 10px; bottom: 0; padding: 0; display: flex; align-items: center; }
